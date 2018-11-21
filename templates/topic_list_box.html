@@ -1,0 +1,25 @@
+<!-- ELEMENT DE MODIFICATION DU TEMPLATE TOPIC LIST : AFFICHAGE DE LA LISTE DES SUJETS -->
+<!-- BEGIN topic -->
+{topics_list_box.row.END_TABLE_STICKY}
+   <tr>
+      <!-- BEGIN single_selection -->
+      <td class="{topics_list_box.row.ROW_CLASS}" align="center" valign="middle" width="20"><input type="radio" name="{topics_list_box.FIELDNAME}" value="{topics_list_box.row.FID}" {topics_list_box.row.L_SELECT} /></td>
+      <!-- END single_selection -->
+     <td class="{topics_list_box.row.ROW_FOLDER_CLASS}" align="center" valign="middle" width="20"><img title="{topics_list_box.row.L_TOPIC_FOLDER_ALT}" src="{topics_list_box.row.TOPIC_FOLDER_IMG}" alt="{topics_list_box.row.L_TOPIC_FOLDER_ALT}" /></td>
+      <td class="fondtopictitle" class="{topics_list_box.row.ROW_CLASS}" width="100%">
+            <h3 class="topic-title">
+                                  <a class="topictitle" href="{topics_list_box.row.U_VIEW_TOPIC}">{topics_list_box.row.TOPIC_TITLE}</a> 
+            </h3>
+      </td>
+     
+      <td class="row3Right" align="center" valign="middle" nowrap="nowrap">
+        <div class="fonddetails">
+          <p class="postdetails">{topics_list_box.row.LAST_POST_TIME}<br/>
+           {topics_list_box.row.LAST_POST_AUTHOR} {topics_list_box.row.LAST_POST_IMG}</p>
+        </div>
+        </td>
+<!-- BEGIN multi_selection -->
+      <td class="row2" align="center" valign="middle"><span class="postdetails"><input onclick="javascript:check_uncheck_main_{topics_list_box.row.BOX_ID}();" type="checkbox" name="{topics_list_box.FIELDNAME}[]{topics_list_box.row.BOX_ID}" value="{topics_list_box.row.FID}" {topics_list_box.row.L_SELECT} /></span></td>
+   <!-- END multi_selection -->
+   </tr>
+   <!-- END topic -->

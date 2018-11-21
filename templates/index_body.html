@@ -1,0 +1,52 @@
+
+<!-- ELEMENT DU TEMPLATE INDEX BODY MODIFIE : L'AFFICHAGE DES GROUPES DU FORUM DANS LE FOOTER -->
+
+<!-- BEGIN disable_viewonline --> 
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="100%" id="group-names">
+      <span class="power" for="power">POWER</span><span class="genius" for="genius">GENIUS</span><span class="citizens" for="citizens">CITIZENS</span>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" id="qeel">
+      <section id="online">
+        <span class="gensmall">
+          {TOTAL_USERS} 
+          {TOTAL_POSTS} 
+          {NEWEST_USER}
+          {TOTAL_USERS_ONLINE}
+          {LOGGED_IN_USER_LIST}
+        </span>
+      </section>
+      
+      <section id="groups">
+        <div id="power" class="active">
+          <h4>POWER</h4>
+          Il s'agit des Alters engagés dans l'Agence, destinés à aller assurer la sécurité en ville. 
+          Bien entendu, l'Agence n'envoie pas les plus jeunes recrues ! 
+          Ainsi, dans les Powers on trouve plusieurs classes d'Alters ou rang : les Newbies, les Plus, les Super et enfin les Ultra.
+        </div>
+        <div id="genius">
+          <h4>GENIUS</h4>
+          Les Genius sont aussi des employés de l'Agence. 
+          Qu'ils soient Alter ou humains sans pouvoirs, leur nature n'est pas ce qui fait leur spécificité. 
+          Au contraire, ce qui caractérise ce groupe, c'est qu'ils sont au coeur des équipes fabriquant les gadgets, les armes, les tenues, et autres objets utilisés par les Power quand ces derniers vont sur le terrain. 
+          Ils restent en arrière, à l'Agence, supervisent les opérations menées sur le terrain, réparent, et même soignent quand cela est nécessaire. 
+          En clair, sans les Genius, les Power ne se débrouilleraient pas aussi bien que ça. 
+        </div>
+        <div id="citizens">
+          <h4>CITIZENS</h4>
+          Tout le monde - heureusement - n'est pas à la YH Agency. Des Alters et humains sans super pouvoirs vivent leur vie à Yuai. 
+          Ils n'ont pas eu l'envie ni même l'ambition de devenir un Power. 
+          Ils ont donc un métier qui leur correspond le plus, et mènent une vie tranquille, plus ou moins normale. 
+        </div>
+      </section>
+      
+      <section id="last-connected">
+        {L_CONNECTED_MEMBERS}
+      </section>
+    </td>
+  </tr>
+</table>
+
